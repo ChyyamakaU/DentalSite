@@ -4,7 +4,7 @@ import Ba from "../assets/DrB.jpg";
 function Team() {
   return (
     <>
-      <section className="bg-gray-100 ">
+      <section className="bg-gray-100 py-6 md:py-10">
         <h2 className="text-2xl md:text-4xl py-8 md:py-10 text-center font-semibold text-[#12345B]">
           OUR Team
         </h2>
@@ -17,7 +17,7 @@ function Team() {
             </p>
             <p className="text-[#26282b] text-center">General and cosmetics surgery</p>
 
-            <button className=" bg-[#12345B] text-[#ffffff] ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
+            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
               View Full Profile
             </button>
           </div>
@@ -29,7 +29,7 @@ function Team() {
             </p>
             <p className="text-[#26282b] text-center">General and cosmetics surgery</p>
 
-            <button className=" bg-[#12345B] text-[#ffffff] ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
+            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
               View Full Profile
             </button>
           </div>
@@ -41,7 +41,7 @@ function Team() {
             </p>
             <p className="text-[#26282b] text-center">General and cosmetics surgery</p>
 
-            <button className=" bg-[#12345B] text-[#ffffff] ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
+            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
               View Full Profile
             </button>
           </div>
