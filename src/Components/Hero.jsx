@@ -10,7 +10,7 @@ function Hero() {
         <div className="text-center pt-20 ">
           <h1 className="text-3xl md:text-6xl font-semibold text-[#12345B] ">Dental Care for Healthy Smiles</h1>
 
-          <p className="text-lg md:text-2xl pt-5 text-[#000000]">Experience stress free dentistry focuced <br /> on your long term oral health</p>
+          <p className="text-lg md:text-2xl pt-5 text-[#26282b]">Experience stress free dentistry focuced <br /> on your long term oral health</p>
         
          <button className=" bg-[#12345B] text-[#ffffff]  rounded-lg text-xs md:text-lg px-4 py-2 my-6 md:my-10">
             Book Appointment
