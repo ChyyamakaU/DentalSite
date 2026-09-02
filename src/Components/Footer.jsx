@@ -14,14 +14,19 @@ function Footer() {
         </div>
 
         <div>
-          <div className="flex gap-1 text-xs md:text-sm items-center ">
+          <div className="flex gap-1 text-sm items-center ">
             <i class="fa-solid fa-phone"></i>
             <p>08123456789</p>
           </div>
 
-          <div className="flex gap-1 text-xs md:text-sm items-center ">
+          <div className="flex gap-1 text-sm items-center ">
             <i class="fa-regular fa-envelope"></i>
             <p>enquiries@smileclinics.com</p>
+          </div>
+
+          <div className="flex gap-1 text-sm items-center ">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>XYZ Street, Jos</p>
           </div>
         </div>
       </footer>
