@@ -14,6 +14,8 @@ function Footer() {
         </div>
 
         <div>
+          <h3>Contact</h3>
+
           <div className="flex gap-1 text-sm items-center ">
             <i class="fa-solid fa-phone"></i>
             <p>08123456789</p>
@@ -27,6 +29,24 @@ function Footer() {
           <div className="flex gap-1 text-sm items-center ">
             <i class="fa-solid fa-location-dot"></i>
             <p>XYZ Street, Jos</p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Opening Hours</h3>
+          <div>
+            <p>Monday- Friday: 9:00am to 5:00pm</p>
+            <p>Saturday: 11:00am to 2:00pm</p>
+            <p>Sunday: Closed</p>
+          </div>
+        </div>
+
+
+        <div>
+          <h3>Social Handles</h3>
+
+          <div>
+            
           </div>
         </div>
       </footer>
