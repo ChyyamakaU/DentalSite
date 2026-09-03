@@ -1,9 +1,4 @@
 function Booking() {
-
-
-
-
-  
   return (
     <>
       <section>
@@ -25,7 +20,7 @@ function Booking() {
                 name="Doctors"
                 id="Doctors"
                 required
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
+                className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
               >
                 <option value="">Select a dentist</option>
                 <option value="John">John Doe</option>
@@ -47,11 +42,10 @@ function Booking() {
                 name="Date"
                 id="Date"
                 required
-                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
+                className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
               />
             </div>
 
-          
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="Time"
@@ -60,18 +54,25 @@ function Booking() {
                 Time
               </label>
 
-              <input
-                type="time"
-                name="Time"
-                id="Time"
+              <select
+                name="Doctors"
+                id="Doctors"
                 required
-               className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
-              />
+                className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
+              >
+                <option value="">Select a dentist</option>
+                <option value="time">9:00am</option>
+                <option value="time">10:00am</option>
+                <option value="time">11:00am</option>
+                <option value="time">12:00am</option>
+                <option value="time">2:00pm</option>
+                <option value="time">3:00pm</option>
+              </select>
             </div>
 
             <button
               type="submit"
-              className="w-full rounded-lg bg-[#12345B] px-4 py-3 font-medium text-white transition hover:bg-[#164b87]"
+              className="w-full rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
             >
               Check Availability
             </button>
