@@ -152,7 +152,7 @@ function handleSubmit (e){
             to ="/success"
             onSubmit={handleSubmit}
               type="submit"
-              className="w-full rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
+              className="w-full relative top-5 left-20 md:left-36 rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
             >
               Book Now
             </Link>
