@@ -1,40 +1,62 @@
 import { useState } from "react";
 function Booking() {
+  const doctors = [
+    {
+      name: "John Doe",
+      availableDates: ["2026-09-05", "2026-09-08", "2026-09-10"],
+      availableTimes: ["09:00", "10:00", "11:00", "13:00", "14:00", "15:00"],
+    },
+    {
+      name: "Jane Doe",
+      availableDates: ["2026-09-04", "2026-09-10", "2026-09-12"],
+      availableTimes: [
+        "09:00",
+        "10:00",
+        "11:00",
+        "12:00",
+        "13:00",
+        "15:00",
+        "16:00",
+      ],
+    },
+    {
+      name: "James Doe",
+      availableDates: ["2026-09-03", "2026-09-06", "2026-09-09"],
+      availableTimes: [
+        "09:00",
+        "10:00",
+        "11:00",
+        "14:00",
+        "15:00",
+        "16:00",
+        "17:00",
+      ],
+    },
+  ];
 
-const doctors = [
-  { name: "John Doe",
-    availableDates: [
-      "2026-09-05",
-      "2026-09-08",
-      "2026-09-10",
-    ],
-  },
-  {name: "Jane Doe",
-    availableDates: [
-      "2026-09-04",
-      "2026-09-10",
-      "2026-09-12",
-    ],
-  },
-  { name: "James Doe",
-    availableDates: [
-      "2026-09-03",
-      "2026-09-06",
-      "2026-09-09",
-    ],
-  },
-];
+  const [doctor, setDoctor] = useState("");
+  const [date, setDate] = useState("");
+  const [availabilityMessage, setAvailabilityMessage] = useState("");
+  const [time, setTime] = useState([]);
 
-const [doctor, setDoctor]= useState("")
-const [date, setDate]= useState("")
-// const [time, setTIme]= useState("")
-  
+  function DocAvailability() {
+    if (doctor === "") {
+      setAvailabilityMessage("Please select a doctor");
+    } else if (date === "") {
+      setAvailabilityMessage("Please select a date");
+    } else {
+      const selectedDoc = doctors.find((doc) => doc.name === doctor);
 
-function Availability (){
-const selectDoctor 
-
-}
-
+      if (selectedDoc.availableDates.includes(date)) {
+        setAvailabilityMessage("Doctor is available, please select time");
+        setTime(selectedDoc.availableTimes);
+      } else {
+        setAvailabilityMessage("Doctor is not available on this date");
+        setTime([]);
+      }
+    }
+  }
+  DocAvailability();
 
   return (
     <>
@@ -54,17 +76,17 @@ const selectDoctor
               </label>
 
               <select
-              value={doctor}
-              onChange={e=> setDoctor(e.target.value)}
+                value={doctor}
+                onChange={(e) => setDoctor(e.target.value)}
                 name="Doctors"
                 id="Doctors"
                 required
                 className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
               >
                 <option value="">Select a dentist</option>
-                <option value="John">John Doe</option>
-                <option value="Jane">Jane Doe</option>
-                <option value="James">James Doe</option>
+                <option value="John Doee">John Doe</option>
+                <option value="Jane Doe">Jane Doe</option>
+                <option value="James Doe">James Doe</option>
               </select>
             </div>
 
@@ -77,8 +99,8 @@ const selectDoctor
               </label>
 
               <input
-              value={date}
-              onClick={e=>setDate(e.target.value)}
+                value={date}
+                onClick={(e) => setDate(e.target.value)}
                 type="date"
                 name="Date"
                 id="Date"
@@ -87,29 +109,31 @@ const selectDoctor
               />
             </div>
 
-            <div className="flex flex-col gap-2">
-              <label
-                htmlFor="Time"
-                className="text-sm md:text-lg font-medium text-[#12345B]"
-              >
-                Time
-              </label>
+            {time.length > 0 && (
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="Time"
+                  className="text-sm md:text-lg font-medium text-[#12345B]"
+                >
+                  Time
+                </label>
 
-              <select
-                name="Doctors"
-                id="Doctors"
-                required
-                className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
-              >
-                <option value="">Select a dentist</option>
-                <option value="time">9:00am</option>
-                <option value="time">10:00am</option>
-                <option value="time">11:00am</option>
-                <option value="time">12:00am</option>
-                <option value="time">2:00pm</option>
-                <option value="time">3:00pm</option>
-              </select>
-            </div>
+                <select
+                  name="Doctors"
+                  id="Doctors"
+                  required
+                  className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
+                >
+                  <option value="">Select a dentist</option>
+
+                  {time.map((theTime) => (
+                    <option value={theTime} key={theTime}>
+                      {theTime}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
 
             <button
               type="submit"
