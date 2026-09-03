@@ -1,4 +1,41 @@
+import { useState } from "react";
 function Booking() {
+
+const doctors = [
+  { name: "John Doe",
+    availableDates: [
+      "2026-09-05",
+      "2026-09-08",
+      "2026-09-10",
+    ],
+  },
+  {name: "Jane Doe",
+    availableDates: [
+      "2026-09-04",
+      "2026-09-10",
+      "2026-09-12",
+    ],
+  },
+  { name: "James Doe",
+    availableDates: [
+      "2026-09-03",
+      "2026-09-06",
+      "2026-09-09",
+    ],
+  },
+];
+
+const [doctor, setDoctor]= useState("")
+const [date, setDate]= useState("")
+// const [time, setTIme]= useState("")
+  
+
+function Availability (){
+const selectDoctor 
+
+}
+
+
   return (
     <>
       <section>
@@ -17,6 +54,8 @@ function Booking() {
               </label>
 
               <select
+              value={doctor}
+              onChange={e=> setDoctor(e.target.value)}
                 name="Doctors"
                 id="Doctors"
                 required
@@ -38,6 +77,8 @@ function Booking() {
               </label>
 
               <input
+              value={date}
+              onClick={e=>setDate(e.target.value)}
                 type="date"
                 name="Date"
                 id="Date"
