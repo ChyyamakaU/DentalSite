@@ -12,7 +12,7 @@ function Header() {
         </div>
 
         <nav className="text-[#1A2B3D] hover:[#2F6FAE] hidden md:flex gap-6 text-xl font-medium">
-          <Link to="/">Home</Link>
+          <Link to="/#home">Home</Link>
           <Link to="/#services">Services</Link>
           <Link to="/#team">Our team</Link>
           <Link to="/#contact">Contact Us</Link>
