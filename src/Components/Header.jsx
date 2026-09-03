@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <header className=" flex justify-between items-center px-10 py-8 bg-[#EAF3FA]">
+      <header className=" flex justify-between items-center p-10 bg-[#EAF3FA] ">
         <div className="flex items-center border-2 border-[#12345B] text-xs md:text-lg rounded-3xl px-1  md:px-2 md:py-1">
           <i className="fa-solid fa-tooth text-[#12345B] text-xs md:text-2xl "></i>
           <p className="text-[#2F6FAE] text-xs md:text-lg font-semibold font-mono">
