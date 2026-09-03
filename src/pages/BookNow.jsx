@@ -139,7 +139,7 @@ function handleSubmit (e){
                 <h3 className="font-bold text-lg md:textxl"> Privacy & Consent</h3>
               </div>
               <p className="text-xs md:text-sm text-[#12345B]">
-                {" "}
+              
                 By submitting this form, I consent to Smile Clinics collecting
                 and using the information I provide to schedule and manage my
                 dental appointment. I understand that my information will be

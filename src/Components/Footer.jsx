@@ -26,7 +26,7 @@ function Footer() {
             <Link to="/#services">Services</Link>
             <Link to="/#team">Our team</Link>
             <Link to="/#About">About Us</Link>
-            <p>Privacy</p>
+            <Link to ="/privacy">Privacy</Link>
             <p>Terms and Conditions</p>
 
             <p>Our Blog</p>

@@ -6,7 +6,7 @@ import Booking from "./pages/Booking.jsx";
 import Footer from "./Components/Footer.jsx"
 import BookNow from "./pages/BookNow.jsx";
 import Success from "./pages/Success.jsx";
-
+import Privacy from "./pages/Privacy.jsx"
 
 function App() {
 
@@ -25,6 +25,7 @@ function App() {
 
            <Route path="/booknow" element={<BookNow />}></Route>
              <Route path="/success" element={<Success />}></Route>
+              <Route path="/privacy" element={<Privacy />}></Route>
         </Routes>
 </>
         <Footer />
