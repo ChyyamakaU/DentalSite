@@ -71,7 +71,7 @@ function Booking() {
 
   return (
     <>
-      <section>
+      <section className="bg-gray-100 ">
         <div className="flex justify-center px-4 py-10">
           <form action="" className="w-full max-w-md py-12">
             <h2 className="text-xl md:text-3xl font-bold text-[#12345B] pb-10 text-center">

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 function Success() {
   return (
     <>
+
+    <section className="bg-gray-100 ">
       <Link to="/" className="flex gap-2 items-center-safe px-6 py-3 font-medium text-[#12345B] ">
       <i className="fa-solid fa-arrow-left-long"></i>
        <p> Back to Home</p>
@@ -17,6 +19,9 @@ function Success() {
 
         <p>Now keep that smile sparkling until we see you!</p>
       </div>
+
+    
+      </section>
     </>
   );
 }

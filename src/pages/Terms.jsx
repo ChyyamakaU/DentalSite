@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 function Success() {
   return (
     <>
+
+
+    <section className="bg-gray-100 ">
       <Link
         to="/"
         className="flex gap-2 items-center-safe px-6 py-3 text-xs md:text-sm font-medium text-[#12345B] "
@@ -54,6 +57,7 @@ function Success() {
           laudantium. Minima placeat iusto distinctio dolorem voluptatum.
         </p>
       </div>
+      </section>
     </>
   );
 }
