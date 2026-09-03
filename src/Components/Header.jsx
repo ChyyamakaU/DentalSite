@@ -10,10 +10,10 @@ function Header() {
         </div>
 
         <nav className="text-[#1A2B3D] hover:[#2F6FAE] hidden md:flex gap-6 text-xl font-medium">
-          <a href="#Home">Home</a>
-          <a href="#Services">Services</a>
-          <a href="#Team">Our team</a>
-          <a href="#Contact us">Contact Us</a>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#team">Our team</a>
+          <a href="#contact us">Contact Us</a>
         </nav>
 
         <div>
