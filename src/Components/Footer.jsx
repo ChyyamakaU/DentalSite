@@ -44,7 +44,13 @@ function Footer() {
         <div>
           <h3 className="text-[#FFFFFF] font-semibold">Social Handles</h3>
 
-          <div className="text-sm md:text-lg"></div>
+          <div className="text-xs md:text-sm flex gap-2 mt-2">
+            <i className="fa-brands fa-facebook text-blue-800"></i>
+            <i className="fa-brands fa-x-twitter text-[#000000]"></i>
+            <i className="fa-brands fa-youtube text-red-600"></i>
+            <i className="fa-brands fa-instagram text-pink-400"></i>
+            <i className="fa-brands fa-linkedin text-blue-700"></i>
+          </div>
         </div>
 
         <div>
