@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 function Booking() {
   const doctors = [
@@ -153,12 +155,13 @@ function Booking() {
             )}
 
             {time !== "" && (
-              <button
+              <Link
+              to= '/booknow'
                 type="submit"
-                className="w-full rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
+                className="w-full relative top-10 left-8 md:left-20 rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
               >
                 Continue to Booking page
-              </button>
+              </Link>
             )}
           </form>
         </div>

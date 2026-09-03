@@ -4,6 +4,7 @@ import Header from "./Components/Header.jsx";
 import Main from "./pages/Main.jsx"
 import Booking from "./pages/Booking.jsx";
 import Footer from "./Components/Footer.jsx"
+import BookNow from "./pages/BookNow.jsx";
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
           
 
           <Route path="/booking" element={<Booking />}></Route>
+
+           <Route path="/booknow" element={<BookNow />}></Route>
         </Routes>
 </>
         <Footer />
