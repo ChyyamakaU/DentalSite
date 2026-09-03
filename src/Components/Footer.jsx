@@ -59,6 +59,8 @@ function Footer() {
           <div className="text-[#DCE6EF] text-sm ">
             <p>Privacy</p>
             <p>Terms and Conditions</p>
+
+             <p>Our Blog</p>
           </div>
         </div>
       </footer>
