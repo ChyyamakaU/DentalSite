@@ -27,7 +27,7 @@ function Footer() {
             <Link to="/#team">Our team</Link>
             <Link to="/#About">About Us</Link>
             <Link to ="/privacy">Privacy</Link>
-            <p>Terms and Conditions</p>
+            <Link to ="/Terms">Terms and Conditions</Link>
 
             <p>Our Blog</p>
           </nav>
