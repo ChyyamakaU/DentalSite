@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
       <footer
-        className="grid grid-cols-1 md:grid-cols-5 gap-12 px-6 md:px-10 bg-[#12345B] py-8 md:py-16 scroll-mt-5"
+        className="grid grid-cols-1 md:grid-cols-5 gap-10 px-6 md:px-10 bg-[#12345B] py-8 md:py-16 scroll-mt-5"
         id="contact"
       >
         <div>
@@ -19,14 +19,14 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="text-[#FFFFFF] font-semibold">Quick Links</h3>
+          <h3 className="text-[#FFFFFF] font-semibold text-lg md:text-xl">Quick Links</h3>
 
-          <nav className="text-[#DCE6EF] text-sm flex flex-col ">
-            <Link to="/">Home</Link>
-            <Link to="/#services">Services</Link>
-            <Link to="/#team">Our team</Link>
-            <Link to="/#About">About Us</Link>
-            <Link to ="/privacy">Privacy</Link>
+          <nav className="text-[#DCE6EF] text-sm md:text-lg flex flex-col pt-3">
+            <Link to="/" className="pb-1">Home</Link>
+            <Link to="/#services"className="pb-1">Services</Link>
+            <Link to="/#team"className="pb-1">Our team</Link>
+            <Link to="/#About" className="pb-1">About Us</Link>
+            <Link to ="/privacy"className="pb-1">Privacy</Link>
             <Link to ="/Terms">Terms and Conditions</Link>
 
             <p>Our Blog</p>
@@ -34,39 +34,39 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">
+          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-xl pb-3">
             Contact
           </h3>
 
-          <div className="flex gap-1 text-sm items-center text-[#DCE6EF]">
+          <div className="flex gap-1 text-sm md:text-lg items-center text-[#DCE6EF] pb-1">
             <i class="fa-solid fa-phone"></i>
             <p>08123456789</p>
           </div>
 
-          <div className="flex gap-1 text-sm items-center text-[#DCE6EF] ">
+          <div className="flex gap-1 text-sm md:text-lg items-center text-[#DCE6EF] pb-1 ">
             <i class="fa-regular fa-envelope"></i>
             <p>enquiries@smileclinics.com</p>
           </div>
 
-          <div className="flex gap-1 text-sm items-center text-[#DCE6EF]">
+          <div className="flex gap-1 text-sm md:text-lg items-center text-[#DCE6EF]">
             <i class="fa-solid fa-location-dot"></i>
             <p>XYZ Street, Jos</p>
           </div>
         </div>
 
         <div>
-          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">
+          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-xl pb-3">
             Opening Hours
           </h3>
-          <div className="text-[#DCE6EF] text-sm ">
-            <p>Monday- Friday: 9:00am to 5:00pm</p>
-            <p>Saturday: 11:00am to 2:00pm</p>
-            <p>Sunday: Closed</p>
+          <div className="text-[#DCE6EF] text-sm md:text-lg ">
+            <p className="pb-1">Monday- Friday: 9:00am to 5:00pm</p>
+            <p className="pb-1">Saturday: 11:00am to 2:00pm</p>
+            <p className="pb-1">Sunday: Closed</p>
           </div>
         </div>
 
         <div>
-          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">
+          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-xl pb-3">
             Social Handles
           </h3>
 
