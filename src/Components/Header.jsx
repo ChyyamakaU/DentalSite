@@ -13,7 +13,7 @@ function Header() {
           <a href="#home">Home</a>
           <a href="#services">Services</a>
           <a href="#team">Our team</a>
-          <a href="#contact us">Contact Us</a>
+          <a href="#contact">Contact Us</a>
         </nav>
 
         <div>

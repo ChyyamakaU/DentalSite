@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <footer className="grid grid-cols-1 md:grid-cols-5 gap-12 px-6 md:px-10 bg-[#12345B] py-8 md:py-16">
+      <footer className="grid grid-cols-1 md:grid-cols-5 gap-12 px-6 md:px-10 bg-[#12345B] py-8 md:py-16 scroll-mt-5" id="contact">
         <div>
           <div className="flex items-center border-2 border-[#99a8b8] text-xs w-28 md:text-lg rounded-3xl px-1  md:px-2 md:py-1">
             <i className="fa-solid fa-tooth text-[#9bb7d4] text-xs md:text-2xl "></i>

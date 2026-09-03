@@ -1,7 +1,7 @@
 function Services() {
   return (
     <>
-      <section className="bg-gray-100 pb-5 md:pb-12 ">
+      <section className="bg-gray-100 pb-5 md:pb-12 scroll-mt-5" id="services">
         <h2 className="text-2xl md:text-4xl py-8 md:py-10 text-center font-semibold text-[#12345B]">
           OUR SERVICES
         </h2>

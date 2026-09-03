@@ -3,7 +3,7 @@ import HeroImage from "../assets/Hero.jpg";
 function Hero() {
   return (
     <>
-    <section className="bg-gray-100">
+    <section className="bg-gray-100 scroll-mt-5" id="home">
       <div className="flex justify-between gap-5 px-10 md:py-24 ">
         <img src={HeroImage} className="hidden md:block object-contain rounded-3xl w-3/6" alt="" />
 

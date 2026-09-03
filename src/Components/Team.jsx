@@ -4,7 +4,7 @@ import Ba from "../assets/DrB.jpg";
 function Team() {
   return (
     <>
-      <section className="bg-gray-100 py-6 md:py-10">
+      <section className="bg-gray-100 py-6 md:py-24 scroll-mt-5" id="team">
         <h2 className="text-2xl md:text-4xl py-8 md:py-10 text-center font-semibold text-[#12345B]">
           OUR Team
         </h2>
