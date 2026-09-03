@@ -1,5 +1,5 @@
 import HeroImage from "../assets/Hero.jpg";
-
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <>
@@ -12,9 +12,9 @@ function Hero() {
 
           <p className="text-lg md:text-2xl pt-5 text-[#26282b]">Experience stress free dentistry focuced <br /> on your long term oral health</p>
         
-         <button className=" bg-[#12345B] text-[#ffffff]  rounded-4xl text-xs md:text-lg px-4 py-2 my-6 md:my-10">
+         <Link to="/booking" className=" bg-[#12345B] text-[#ffffff]  rounded-4xl text-xs md:text-lg px-4 py-2 relative top-3 md:top-8">
             Book Appointment
-          </button>
+          </Link>
         
         </div>
 

@@ -1,7 +1,7 @@
 
-import Hero from './Components/Hero'
-import Services from './Components/Services'
-import Team from './Components/Team'
+import Hero from '../Components/Hero.jsx'
+import Services from '../Components/Services.jsx'
+import Team from '../Components/Team.jsx'
 
 
 function Main() {
