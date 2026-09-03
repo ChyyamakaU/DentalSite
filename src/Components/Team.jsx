@@ -17,7 +17,7 @@ function Team() {
             </p>
             <p className="text-[#26282b] text-center">General and cosmetics surgery</p>
 
-            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
+            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-4xl text-xs md:text-lg px-4 py-1 my-2">
               View Full Profile
             </button>
           </div>
@@ -29,7 +29,7 @@ function Team() {
             </p>
             <p className="text-[#26282b] text-center">General and cosmetics surgery</p>
 
-            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
+            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-4xl text-xs md:text-lg px-4 py-1 my-2">
               View Full Profile
             </button>
           </div>
@@ -41,7 +41,7 @@ function Team() {
             </p>
             <p className="text-[#26282b] text-center">General and cosmetics surgery</p>
 
-            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-lg text-xs md:text-lg px-4 py-1 my-2">
+            <button className=" bg-[#12345B] text-[#ffffff] ml-16 md:ml-32 rounded-4xl text-xs md:text-lg px-4 py-1 my-2">
               View Full Profile
             </button>
           </div>

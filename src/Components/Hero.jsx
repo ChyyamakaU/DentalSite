@@ -12,7 +12,7 @@ function Hero() {
 
           <p className="text-lg md:text-2xl pt-5 text-[#26282b]">Experience stress free dentistry focuced <br /> on your long term oral health</p>
         
-         <button className=" bg-[#12345B] text-[#ffffff]  rounded-lg text-xs md:text-lg px-4 py-2 my-6 md:my-10">
+         <button className=" bg-[#12345B] text-[#ffffff]  rounded-4xl text-xs md:text-lg px-4 py-2 my-6 md:my-10">
             Book Appointment
           </button>
         

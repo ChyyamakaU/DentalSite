@@ -20,7 +20,7 @@ function Header() {
           <button className="block md:hidden">
             <i className="fa-solid fa-bars" ></i>
           </button>
-          <button className="hidden md:block bg-[#12345B] text-[#ffffff]  rounded-lg text-xs md:text-lg px-4 py-2">
+          <button className="hidden md:block bg-[#12345B] text-[#ffffff]  rounded-4xl text-xs md:text-lg px-4 py-2">
             Book Appointment
           </button>
         </div>
