@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function BookNow() {
 
@@ -126,8 +126,10 @@ function handleSubmit (e){
                 required
                 className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
               >
-                <option value="">Yes</option>
-                <option value="">No</option>
+
+                 <option value="">HMO?</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
               </select>
             </div>
 
@@ -146,13 +148,14 @@ function handleSubmit (e){
               </p>
             </div>
 
-            <button
+            <Link 
+            to ="/success"
             onSubmit={handleSubmit}
               type="submit"
               className="w-full rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
             >
               Book Now
-            </button>
+            </Link>
           </form>
         </div>
       </section>
