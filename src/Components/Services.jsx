@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Services() {
   return (
     <>
-      <section className="bg-gray-100 py-10 scroll-mt-5" id="services">
+      <section className="bg-gray-100 py-10  scroll-mt-5" id="services">
         <h2 className="text-2xl md:text-4xl py-8 md:py-10 text-center font-semibold text-[#12345B]">
           OUR SERVICES
         </h2>
