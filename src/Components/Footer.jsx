@@ -16,17 +16,17 @@ function Footer() {
         <div>
           <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">Contact</h3>
 
-          <div className="flex gap-1 text-sm md:text-lg items-center text-[#DCE6EF]">
+          <div className="flex gap-1 text-sm items-center text-[#DCE6EF]">
             <i class="fa-solid fa-phone"></i>
             <p>08123456789</p>
           </div>
 
-          <div className="flex gap-1 text-sm md:text-lg items-center text-[#DCE6EF] ">
+          <div className="flex gap-1 text-sm items-center text-[#DCE6EF] ">
             <i class="fa-regular fa-envelope"></i>
             <p>enquiries@smileclinics.com</p>
           </div>
 
-          <div className="flex gap-1 text-sm md:text-lg items-center text-[#DCE6EF]">
+          <div className="flex gap-1 text-sm items-center text-[#DCE6EF]">
             <i class="fa-solid fa-location-dot"></i>
             <p>XYZ Street, Jos</p>
           </div>
@@ -34,7 +34,7 @@ function Footer() {
 
         <div>
           <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">Opening Hours</h3>
-          <div className="text-[#DCE6EF] text-sm md:text-lg">
+          <div className="text-[#DCE6EF] text-sm ">
             <p>Monday- Friday: 9:00am to 5:00pm</p>
             <p>Saturday: 11:00am to 2:00pm</p>
             <p>Sunday: Closed</p>
@@ -56,7 +56,7 @@ function Footer() {
         <div>
           <h3 className="text-[#FFFFFF] font-semibold">Links</h3>
 
-          <div className="text-[#DCE6EF] text-sm md:text-lg">
+          <div className="text-[#DCE6EF] text-sm ">
             <p>Privacy</p>
             <p>Terms and Conditions</p>
           </div>
