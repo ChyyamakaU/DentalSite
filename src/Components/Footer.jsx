@@ -14,7 +14,7 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="text-[#FFFFFF] font-semibold">Contact</h3>
+          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">Contact</h3>
 
           <div className="flex gap-1 text-sm md:text-lg items-center text-[#DCE6EF]">
             <i class="fa-solid fa-phone"></i>
@@ -33,7 +33,7 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="text-[#FFFFFF] font-semibold">Opening Hours</h3>
+          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">Opening Hours</h3>
           <div className="text-[#DCE6EF] text-sm md:text-lg">
             <p>Monday- Friday: 9:00am to 5:00pm</p>
             <p>Saturday: 11:00am to 2:00pm</p>
@@ -42,7 +42,7 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="text-[#FFFFFF] font-semibold">Social Handles</h3>
+          <h3 className="text-[#FFFFFF] font-semibold text-sm md:text-lg">Social Handles</h3>
 
           <div className="text-xs md:text-sm flex gap-2 mt-2">
             <i className="fa-brands fa-facebook text-blue-800"></i>

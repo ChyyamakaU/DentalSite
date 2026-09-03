@@ -1,14 +1,14 @@
 function Services() {
   return (
     <>
-      <section className="bg-gray-100 pb-5 md:pb-12 scroll-mt-5" id="services">
+      <section className="bg-gray-100 py-6 md:py-10 scroll-mt-5" id="services">
         <h2 className="text-2xl md:text-4xl py-8 md:py-10 text-center font-semibold text-[#12345B]">
           OUR SERVICES
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 md:px-10 gap-5 bg-[#EAF3FA] py-7 md:py-12">
-          <div className="text-center ">
-            <h3 className="text-lg md:text-xl font-semibold  text-[#12345B] pb-2">
+        <div className="grid grid-cols-1 md:grid-cols-4 md:px-10 gap-5 bg-[#EAF3FA] py-7 md:py-12 ">
+          <div className="text-center shadow-2xl rounded-3xl p-7 mx-4">
+            <h3 className="text-lg md:text-xl font-semibold  text-[#12345B] pb-2 ">
               General Dentistry
             </h3>
             <p className="text-sm px-6  text-[#26282b]">
@@ -22,7 +22,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center shadow-2xl rounded-3xl p-7 mx-4">
             <h3 className="text-xl font-semibold  text-[#12345B] pb-2">
               Cosmetic Dentistry
             </h3>
@@ -36,7 +36,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="text-center">
+          <div className="text-center shadow-2xl rounded-3xl p-7 mx-4">
             <h3 className="text-xl font-semibold text-[#12345B] pb-2">
               Othodontics
             </h3>
@@ -50,7 +50,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="text-center ">
+          <div className="text-center shadow-2xl rounded-3xl p-7 mx-4">
             <h3 className="text-xl font-semibold text-[#12345B] pb-2">
               Preventive Care
             </h3>
