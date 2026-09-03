@@ -1,12 +1,15 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import { Link } from "react-router-dom";
 
 function BookNow() {
 
-function handlePatientData(){
+const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [phone, setPhone] = useState("");
 
-e
+function handleSubmit (e){
 
+    e.preventDefault ()
 }
 
 
@@ -48,6 +51,8 @@ e
               </label>
 
               <input
+              value={name}
+              onChange={(e)=>setName(e.target.value)}
                 type="text"
                 required
                 placeholder="Enter your full name"
@@ -61,6 +66,8 @@ e
                 Email
               </label>
               <input
+              value={email}
+              onChange={(e)=>setEmail(e.target.value)}
                 type="email"
                 placeholder="Enter your email address"
                 required
@@ -74,6 +81,8 @@ e
                 Phone Number
               </label>
               <input
+              value={phone}
+              onChange={(e)=>setPhone(e.target.value)}
                 type="number"
                 placeholder="Enter your phone number"
                 required
@@ -138,6 +147,7 @@ e
             </div>
 
             <button
+            onSubmit={handleSubmit}
               type="submit"
               className="w-full rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
             >
