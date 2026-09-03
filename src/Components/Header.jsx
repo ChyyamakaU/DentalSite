@@ -1,9 +1,20 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Header() {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  function handleClickMenu() {
+    if (!openMenu) {
+      setOpenMenu(true);
+    } else {
+      setOpenMenu(false);
+    }
+  }
+
   return (
     <>
-      <header className=" flex justify-between items-center p-10 bg-[#EAF3FA] ">
+      <header className="relative flex justify-between items-center p-10 bg-[#EAF3FA]">
         <div className="flex items-center border-2 border-[#12345B] text-xs md:text-lg rounded-3xl px-1  md:px-2 md:py-1">
           <i className="fa-solid fa-tooth text-[#12345B] text-xs md:text-2xl "></i>
           <p className="text-[#2F6FAE] text-xs md:text-lg font-semibold font-mono">
@@ -19,10 +30,20 @@ function Header() {
         </nav>
 
         <div>
-          <button className="block md:hidden">
-            <i className="fa-solid fa-bars"></i>
-          </button>
+          <div>
+            <button className="block md:hidden" onClick={handleClickMenu}>
+              <i className="fa-solid fa-bars"></i>
+            </button>
 
+            {openMenu && (
+              <nav className="absolute top-full right-0 flex flex-col gap-4 bg-[#EAF3FA] p-6 text-[#1A2B3D]">
+                <Link to="/#home">Home</Link>
+                <Link to="/#services">Services</Link>
+                <Link to="/#team">Our team</Link>
+                <Link to="/#contact">Contact Us</Link>
+              </nav>
+            )}
+          </div>
           <Link
             to="/booking"
             className="hidden md:block bg-[#12345B] text-[#ffffff]  rounded-4xl text-xs md:text-lg px-4 py-2"
