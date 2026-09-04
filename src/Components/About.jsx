@@ -1,4 +1,4 @@
-import HeroImage from "../assets/Hero.jpg";
+import group from "../assets/group.jpg";
 import { Link } from "react-router-dom";
 function About() {
   return (
@@ -36,7 +36,7 @@ function About() {
           </div>
 
            <img
-            src={HeroImage}
+            src={group}
             className="hidden md:block object-contain rounded-3xl w-3/6"
             alt=""
           />
