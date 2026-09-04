@@ -1,22 +1,43 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 function Booking() {
   const doctors = [
     {
       name: "John Doe",
-      availableDates: ["2026-10-05", "2026-09-08", "2026-09-10", "2026-09-11", "2026-09-12", "2026-09-13"],
+      availableDates: [
+        "2026-10-05",
+        "2026-09-08",
+        "2026-09-10",
+        "2026-09-11",
+        "2026-09-12",
+        "2026-09-13",
+      ],
       availableTimes: ["09:00", "10:00", "11:00", "13:00", "15:00", "16:00"],
     },
     {
       name: "Jane Doe",
-      availableDates: ["2026-09-04", "2026-09-10", "2026-09-12", "2026-09-13", "2026-09-14", "2026-09-15", "2026-09-16"],
+      availableDates: [
+        "2026-09-04",
+        "2026-09-10",
+        "2026-09-12",
+        "2026-09-13",
+        "2026-09-14",
+        "2026-09-15",
+        "2026-09-16",
+      ],
       availableTimes: ["9:30", "11:50", "12:50", "14:00", "15:00", "16:00"],
     },
     {
       name: "James Doe",
-      availableDates: ["2026-09-04", "2026-09-05","2026-09-06", "2026-09-07", "2026-09-08", "2026-09-09"],
+      availableDates: [
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09",
+      ],
       availableTimes: ["09:00", "10:30", "11:30", "13:30", "14:30", "15:30"],
     },
   ];
@@ -78,91 +99,93 @@ function Booking() {
               Book an Appointment
             </h2>
 
-            <div className="flex flex-col gap-2">
-              <label
-                htmlFor="Doctors"
-                className="text-sm md:text-lg font-medium text-[#12345B]"
-              >
-                Preferred Dentist
-              </label>
-
-              <select
-                value={doctor}
-                onChange={handleDocChange}
-                name="Doctors"
-                id="Doctors"
-                required
-                className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
-              >
-                <option value="">Select a dentist</option>
-                <option value="John Doe">John Doe</option>
-                <option value="Jane Doe">Jane Doe</option>
-                <option value="James Doe">James Doe</option>
-              </select>
-            </div>
-
-            <div className="flex flex-col gap-2">
-              <label
-                htmlFor="Date"
-                className="text-sm  md:text-lg font-medium text-[#12345B]"
-              >
-                Date
-              </label>
-
-              <input
-                value={date}
-                onChange={handleDateChange}
-                type="date"
-                name="Date"
-                id="Date"
-                required
-                className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
-              />
-            </div>
-
-            {availabilityMessage !== "" && (
-              <p className="mt-4 text-sm text-[#12345B]">
-                {availabilityMessage}
-              </p>
-            )}
-
-            {AvailableTime.length > 0 && (
+            <div className="border border-gray-300 p-10 rounded-2xl h-11/12">
               <div className="flex flex-col gap-2">
                 <label
-                  htmlFor="Time"
+                  htmlFor="Doctors"
                   className="text-sm md:text-lg font-medium text-[#12345B]"
                 >
-                  Time
+                  Preferred Dentist
                 </label>
 
                 <select
-                  value={time}
-                  onChange={(e) => setTime(e.target.value)}
-                  name="Time"
-                  id="Time"
+                  value={doctor}
+                  onChange={handleDocChange}
+                  name="Doctors"
+                  id="Doctors"
                   required
                   className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
                 >
-                  <option value="">Select preferredTime</option>
-
-                  {AvailableTime.map((theTime) => (
-                    <option value={theTime} key={theTime}>
-                      {theTime}
-                    </option>
-                  ))}
+                  <option value="">Select a dentist</option>
+                  <option value="John Doe">John Doe</option>
+                  <option value="Jane Doe">Jane Doe</option>
+                  <option value="James Doe">James Doe</option>
                 </select>
               </div>
-            )}
 
-            {time !== "" && (
-              <Link
-              to= '/booknow'
-                type="submit"
-                className="w-full relative top-10 left-8 md:left-20 rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
-              >
-                Continue to Booking page
-              </Link>
-            )}
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="Date"
+                  className="text-sm  md:text-lg font-medium text-[#12345B]"
+                >
+                  Date
+                </label>
+
+                <input
+                  value={date}
+                  onChange={handleDateChange}
+                  type="date"
+                  name="Date"
+                  id="Date"
+                  required
+                  className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
+                />
+              </div>
+
+              {availabilityMessage !== "" && (
+                <p className="mt-4 text-sm text-[#12345B]">
+                  {availabilityMessage}
+                </p>
+              )}
+
+              {AvailableTime.length > 0 && (
+                <div className="flex flex-col gap-2">
+                  <label
+                    htmlFor="Time"
+                    className="text-sm md:text-lg font-medium text-[#12345B]"
+                  >
+                    Time
+                  </label>
+
+                  <select
+                    value={time}
+                    onChange={(e) => setTime(e.target.value)}
+                    name="Time"
+                    id="Time"
+                    required
+                    className="w-full rounded-4xl border border-gray-300 bg-white px-4 py-3 text-sm text-[#12345B] outline-none  focus:border-[#12345B] focus:ring-0 focus:ring-[#12345B] "
+                  >
+                    <option value="">Select preferredTime</option>
+
+                    {AvailableTime.map((theTime) => (
+                      <option value={theTime} key={theTime}>
+                        {theTime}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
+              {time !== "" && (
+                <Link
+                  to="/booknow"
+                  type="submit"
+                  className="w-full relative top-10 left-8 md:left-20 rounded-4xl bg-[#12345B] px-4 py-3 my-6 font-medium text-white transition hover:bg-[#164b87] "
+                >
+                  Continue to Booking page
+                </Link>
+              )}
+            </div>
           </form>
         </div>
       </section>

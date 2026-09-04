@@ -4,7 +4,7 @@ function Success() {
   return (
     <>
 
-    <section className="bg-gray-100 ">
+    <section >
       <Link to="/" className="flex gap-2 items-center-safe px-6 py-3 font-medium text-[#12345B] ">
       <i className="fa-solid fa-arrow-left-long"></i>
        <p> Back to Home</p>
